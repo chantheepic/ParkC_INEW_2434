@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<link
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+  rel="stylesheet"
+/>
+<html>
+  <body class="container w-75 m-4">
+    <h2 class="mb-4">Edit {{topic.title}} ({{topic.topic_id}})</h2>
+    <form class="w-50" action="/topics/{{topic.topic_id}}/edit" method="POST">
+      {% csrf_token %}
+      <label for="title" class="form-label mt-2">Title</label>
+      <input
+        required
+        type="text"
+        class="form-control mb-2"
+        id="title"
+        name="title"
+        placeholder="Title"
+        value="{{topic.title}}"
+      />
+      <label for="author" class="form-label mt-2">Author</label>
+      <input
+        required
+        type="text"
+        class="form-control mb-2"
+        id="author"
+        name="author"
+        placeholder="Author"
+        value="{{topic.author}}"
+      />
+      <label for="content" class="form-label mt-2">Content</label>
+      <textarea
+        required
+        type="text"
+        class="form-control mb-2"
+        id="content"
+        name="content"
+        placeholder="Content"
+      >
+{{topic.content}}</textarea
+      >
+      <button type="submit" class="btn btn-outline-primary my-2 w-100">
+        Update
+      </button>
+    </form>
+  </body>
+</html>
