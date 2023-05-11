@@ -1,6 +1,6 @@
 # Forum Thing
 
-![Untitled-2023-05-11-0037](https://github.com/chantheepic/ParkC_INEW_2434/assets/33669637/b2635561-1b83-465a-ba18-7708d8005853)
+![Untitled-2023-05-11-0037(1)](https://github.com/chantheepic/ParkC_INEW_2434/assets/33669637/170ea4d9-e4df-4267-ae6b-9419e2711187)
 
 ## Summary
 A forum that allows users to create a thread and add replies.
